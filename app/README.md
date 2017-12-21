@@ -17,7 +17,7 @@
 - > `yarn start`
 - ^ should open your browser and you should see the app running
 
-# How to test it in the browser
+# How to build it for chrome
 - inside of app folder
 - > `yarn build`
 - in your chrome browser type `chrome://extensions`
