@@ -9,7 +9,7 @@ const Row = glamorous.div({
 });
 
 const LabelContainer = glamorous.div({
-  flexBasis: `${tokens.space*15}px`,
+  flexBasis: `${tokens.space*9}px`,
   textAlign: `right`,
   borderRight: `${tokens.gutter}px solid transparent`
 });
