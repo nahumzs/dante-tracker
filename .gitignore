@@ -1,7 +1,12 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+#build
+app/build
+app/public
+
 # dependencies
 /node_modules
+app/node_modules
 
 # testing
 /coverage
