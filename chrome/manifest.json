@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Xolo time tracker",
+  "version": "0.1",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>", "https://ammami-c5505.firebaseio.com/*"],
+      "js": ["content/index.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+  "browser_action": {
+    "default_title": "Time tracker",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background/index.js"]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "time",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "glamor": "^2.20.40",
+    "glamorous": "^4.11.0",
+    "glamorous-primitives": "^2.1.1",
+    "immutable": "^3.8.2",
+    "moment": "^2.20.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7",
+    "react-primitives": "^0.4.4",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "yarn firebase:dev:config && react-scripts start",
+    "build": "yarn firebase:production:config && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postbuild": "sh ./scripts/move-to-chrome.sh",
+    "firebase:dev:config": "NODE_ENV=dev node ./scripts/create-firebase-config.js",
+    "firebase:production:config": "NODE_ENV=production node ./scripts/create-firebase-config.js"
+  },
+  "devDependencies": {
+    "firebase": "^4.8.0"
+  }
+}

@@ -1,0 +1,14 @@
+/* reset for modern browsers  */
+/* https://benfrain.com/a-modern-css-reset-with-caveats/ */
+/* We only care about chrome extension is safe to play with this */
+* {
+    all: unset;
+    box-sizing: border-box;
+    transform-origin: 0px 0px 0px;
+}
+
+/* Thanks to L. David Baron for this: https://twitter.com/davidbaron/status/794138427952222210 */
+base, basefont, datalist, head, meta, script, style, title,
+noembed, param, template {
+    display: none;
+}
