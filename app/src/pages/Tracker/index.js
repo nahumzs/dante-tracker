@@ -37,7 +37,6 @@ class Tracker extends Component {
     toastType: 'info',
   }
   componentDidMount() {
-    this.setTick();
     TagsSources.getAll().then(({payload}) => {
       const keys = Object.keys(payload);
       const lastKey = keys[keys.length-1];
@@ -77,12 +76,6 @@ class Tracker extends Component {
     }
 
     return '0:0';
-  }
-
-  setTick = () => {
-    setInterval(() => {
-      this.setState({ currentTime: this.time });
-    }, 60000);
   }
 
   onKeyPressInTagInput = (e) => {
@@ -251,12 +244,6 @@ class Tracker extends Component {
             { this.renderLoginLink() }
           </PrettyFormRow>
         </PrettyGutter>
-        <PrettyGutter>
-          <PrettyFormRow label="today">
-            <PrettyHeader>{ this.state.currentTime }</PrettyHeader>
-          </PrettyFormRow>
-        </PrettyGutter>
-        <Hr />
         <PrettyGutter>
           <PrettyFormRow label="task">
             <PrettyInput value={this.state.task} onChange={this.onChangeTaskInput} />

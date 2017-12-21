@@ -1,0 +1,32 @@
+.dante-top-navigator__container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 16px;
+  font-family: 'Work Sans';
+  font-size: 14px;
+}
+
+.dante-top-navigator__link {
+  width: 50%;
+  display: inline-block;
+  padding: 8px;
+  background: #FFF;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-bottom: 3px solid transparent;
+}
+
+.dante-top-navigator__link:active {
+  background: #FFF;
+}
+
+.dante-top-navigator__link:focus {
+  outline: 1px dotted #D43;
+}
+
+.dante-top-navigator__link--active {
+  color: #F60;
+  border-bottom: 3px solid #F60;
+}

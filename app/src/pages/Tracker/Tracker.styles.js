@@ -34,15 +34,15 @@ export const Hr = glamorous.hr({
   width: '100%',
   display: 'block',
   height: `1px`,
-  margin: `${tokens.space*2}px 0`,
+  margin: `${tokens.space}px 0`,
   position: 'relative',
   ":after": {
     content: '\"\"',
-    borderBottom: '1px dashed #DDD',
-    width: '75%;',
+    borderBottom: '1px dotted #DDD',
+    width: '95%',
     position: 'absolute',
     left: '50%',
-    marginLeft: `-${75/2}%`,
+    marginLeft: `-${95/2}%`,
   }
 });
 

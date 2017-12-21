@@ -6,10 +6,11 @@ import tokens from '../../tokens';
 const Row = glamorous.div({
   display: 'flex',
   alignItems: 'center',
+  padding: `0 ${tokens.space}px`,
 });
 
 const LabelContainer = glamorous.div({
-  flexBasis: `${tokens.space*9}px`,
+  flexBasis: `${tokens.space*7}px`,
   textAlign: `right`,
   borderRight: `${tokens.gutter}px solid transparent`
 });
