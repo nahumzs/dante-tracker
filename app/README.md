@@ -1,6 +1,6 @@
 # How to run it in your browser
-- `cd app`
-- `yarn install`
+- > `cd app`
+- > `yarn install`
 - created `${your-path}/app/src/.firebase.dev.json` && `${your-path}/app/src/.firebase.production.json`
 - inside those copy/paste the database config of your firebase db. it should look like something like this:
 ```js
@@ -19,7 +19,7 @@
 
 # How to test it in the browser
 - inside of app folder
-- `yarn build`
+- > `yarn build`
 - in your chrome browser type `chrome://extensions`
 - enable the checkbox in the top right corner for `Developer mode`
 - Load unpacked extension
