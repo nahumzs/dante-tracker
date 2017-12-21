@@ -13,7 +13,7 @@ export default class ChromeExtension extends Component {
     // https://stackoverflow.com/questions/13546778/how-to-communicate-between-popup-js-and-background-js-in-chrome-extension
     if (chrome && chrome.extension) {
       const port = chrome.extension.connect({
-        name: "Sample Communication"
+        name: "Dante tracker port"
       });
 
       port.postMessage(`from: ${host} ⚡️ to background`);
