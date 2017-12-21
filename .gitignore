@@ -20,6 +20,13 @@ app/node_modules
 .firebase.config*
 .firebase.user*
 
+# chrome extension
+chrome/static/*
+chrome/asset-manifest.json
+chrome/index.html
+chrome/service-worker.js
+
+
 # misc
 .DS_Store
 .env.local

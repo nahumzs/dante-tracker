@@ -6,6 +6,19 @@ import { trackersPath } from '../.firebase.paths'
 import response, { __SUCCESS__, __ERROR__ } from './_response';
 
 export default class TrakersSources {
+  static getRef = (id = '') => {
+    const path = trackersPath(__USER__UUID__, id);
+    const tagsRef = firebase.database().ref(path);
+    return tagsRef;
+  }
+
+  static getAll = () => new Promise((resolve) => {
+    const ref = TrakersSources.getRef();
+    ref.orderByKey().on('value', snapshot => {
+      resolve(response(snapshot.val()));
+    });
+  });
+
   static save = (tracker) => new Promise((resolve) => {
     const tagsToSave = {
       utcOffset: new Date().getTimezoneOffset(),

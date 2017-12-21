@@ -1,6 +1,6 @@
 #!/bin/node
 const path = require('path');
-console.log('🤠 Welcome, creating config fiel');
+console.log('🤠 Welcome, creating config file');
 const env = (process.env && process.env.NODE_ENV) || 'dev';
 let config = null;
 config = require('../src/.firebase.dev.json');
