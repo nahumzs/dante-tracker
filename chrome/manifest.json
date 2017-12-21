@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>", "https://ammami-c5505.firebaseio.com/*"],
+      "matches": ["<all_urls>"],
       "js": ["content/index.js"]
     }
   ],
